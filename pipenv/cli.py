@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 import contextlib
 import codecs
 import json
@@ -22,7 +24,6 @@ import pipfile
 import pipdeptree
 import requirements
 import semver
-from __future__ import unicode_literals
 from blindspin import spinner
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from pip.req.req_file import parse_requirements
