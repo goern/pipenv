@@ -378,7 +378,7 @@ def do_install_dependencies(
         sys.exit(0)
 
     # pip install:
-    for dep, ignore_hash in progress.bar(deps_list, label='🌻   ' if os.name != 'nt' else ''):
+    for dep, ignore_hash in progress.bar(deps_list, label=str('🌻   ') if os.name != 'nt' else ''):
 
         # Install the module.
         c = pip_install(
